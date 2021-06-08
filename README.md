@@ -33,7 +33,7 @@ inside-pqsql     > create database <name_of_database> with owner postgres;
 ```
 > psql -h localhost -p <port> -U postgres -W -d <name_of_database> -f OMOP\ CDM\ vocabulary\ load\ -\ PostgreSQL.sql
 ```
-7. Run syphilis_registry_vocabulary.dll.txt
+7. Run syphilis_registry_vocabulary.sql
 ```
 > psql -h localhost -p <port> -U postgres -W -d <name_of_database> -f syphilis_registry_vocabulary.sql
 ```
