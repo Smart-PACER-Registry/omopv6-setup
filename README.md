@@ -32,7 +32,9 @@ inside-pqsql     > create database <name_of_database> with owner postgres;
 6. Run DDL (update path to the vocabulary files) that uploads vocabularies to the database created in step 3. Vocabulary files should be available from step 1 and 2. And, DDL for importing vocabulary should be available in https://github.com/OHDSI/CommonDataModel/tree/master/PostgreSQL/VocabImport
 ```
 > psql -h localhost -p <port> -U postgres -W -d <name_of_database> -f OMOP\ CDM\ vocabulary\ load\ -\ PostgreSQL.sql
-Run syphilis_registry_vocabulary.dll.txt
+```
+7. Run syphilis_registry_vocabulary.dll.txt
+```
 > psql -h localhost -p <port> -U postgres -W -d <name_of_database> -f syphilis_registry_vocabulary.sql
 ```
  
