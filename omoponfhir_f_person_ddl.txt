@@ -14,3 +14,4 @@ create table if not exists f_person
 	contact_point3 varchar(255),
 	maritalstatus varchar(255)
 );
+alter table f_person add constraint xpk_f_person primary key ( person_id ) ;

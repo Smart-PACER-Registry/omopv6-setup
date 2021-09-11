@@ -1,8 +1,0 @@
-create table s_session_logs
-(
-	session_id integer not null,
-	datetime timestamp default CURRENT_TIMESTAMP not null,
-	text varchar(255)
-);
-
-comment on table s_session_logs is 'Logging all session operations';
